@@ -16,18 +16,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D7B-mP-wg8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" id="HMX-5F-YR2" customClass="ArticleTableViewCell" customModule="Articles" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="446"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="448.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HMX-5F-YR2" id="1VD-mm-4zN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="448.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YNH-rt-K15">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="446"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="448.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCi-KN-5Mp" userLabel="headerView">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -45,14 +45,14 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ravi Kumar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5r-Zw-SXf">
-                                                                    <rect key="frame" x="78" y="15" width="87.5" height="19.5"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                    <rect key="frame" x="78" y="15" width="78" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior Consultant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHt-NQ-zGt">
-                                                                    <rect key="frame" x="78" y="36" width="122.5" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <rect key="frame" x="78" y="36" width="115.5" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -95,10 +95,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-57-h7D" userLabel="descriptionView">
-                                                            <rect key="frame" x="0.0" y="286" width="414" height="112"/>
+                                                            <rect key="frame" x="0.0" y="286" width="414" height="114.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJg-O9-J8Z" userLabel="descriptionLabel">
-                                                                    <rect key="frame" x="15" y="0.0" width="384" height="112"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="384" height="114.5"/>
                                                                     <string key="text">Please note that an article may have media.Please note that an article may have media.Please note that an article may have media.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <nil key="textColor"/>
@@ -114,7 +114,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-ej-Hr8" userLabel="bottomView">
-                                                            <rect key="frame" x="0.0" y="406" width="414" height="40"/>
+                                                            <rect key="frame" x="0.0" y="408.5" width="414" height="40"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5K Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-Yh-2MT">
                                                                     <rect key="frame" x="15" y="6" width="150" height="14.5"/>
@@ -197,7 +197,7 @@
                             <constraint firstItem="D7B-mP-wg8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gbi-DV-W09"/>
                             <constraint firstItem="CIm-WT-c20" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MUa-A2-0nf"/>
                             <constraint firstItem="CIm-WT-c20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8S-ZF-Jc8"/>
-                            <constraint firstAttribute="bottom" secondItem="D7B-mP-wg8" secondAttribute="bottom" id="kNF-dg-sGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D7B-mP-wg8" secondAttribute="bottom" id="kNF-dg-sGh"/>
                             <constraint firstItem="D7B-mP-wg8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="laP-Si-jaG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

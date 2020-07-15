@@ -7,9 +7,12 @@
 //
 
 import Foundation
+
+
 extension Int{
     
     func getCountFormatted() -> String  {
+        
         var countText = ""
         if self < 1000 {
             countText = "\(self)"
@@ -20,8 +23,7 @@ extension Int{
             if self.isMultiple(of: 1000){
                 countText = "\(Int(tempCounts))" + countText
             }else{
-                let temp =  String(format: "%.1f", tempCounts )
-                countText = "\(temp)" + countText
+                countText = String(format: "%.1f", tempCounts ).replacingOccurrences(of: ".0", with: "") + countText
             }
         }
         else if self < 1000000000{
@@ -31,9 +33,7 @@ extension Int{
             if self.isMultiple(of: 1000000){
                 countText = "\(Int(tempCounts))" + countText
             }else{
-                
-                let temp =  String(format: "%.1f", tempCounts )
-                countText = "\(temp)" + countText
+                countText = String(format: "%.1f", tempCounts).replacingOccurrences(of: ".0", with: "") + countText
             }
         }
         return countText

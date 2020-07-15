@@ -24,6 +24,7 @@ class ArticleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var commentsCountLabel: UILabel!
     
+    
     func configureCell(_ articleViewModel:ArticleViewModel)  {
         nameLable.text = articleViewModel.userName
         timeAgoLabel.text = articleViewModel.timeAgo
@@ -39,7 +40,7 @@ class ArticleTableViewCell: UITableViewCell {
         else{
             self.postImageView.superview?.isHidden = true
         }
-      
+        
         self.profileImageView.sd_setImage(with: articleViewModel.userAvtarURL, placeholderImage: UIImage(named: "profile_placeholder"), options: SDWebImageOptions.progressiveLoad, context: nil)
     }
   

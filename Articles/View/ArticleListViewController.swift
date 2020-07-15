@@ -40,12 +40,16 @@ extension ArticleListViewController: ArticleDataDelegate{
     func didRecievNewArticles() {
         self.articleTableView.reloadData()
         isPrefetchingNextPage = false
-        activityIndicator.stopAnimating()
+        if activityIndicator.isAnimating{
+            activityIndicator.stopAnimating()
+        }
     }
     
     func didRecieveError(err: Error) {
         isPrefetchingNextPage = false
-        activityIndicator.stopAnimating()
+        if activityIndicator.isAnimating{
+            activityIndicator.stopAnimating()
+        }
     }
 }
 

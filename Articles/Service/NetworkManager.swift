@@ -36,11 +36,21 @@ class NetworkManager {
         
         load(url: type.url) { data,err  in
             if let data = data {
-                let articles = try? JSONDecoder().decode([Article].self, from: data)
+                let articles = DataParsing().decodeFrom(data: data)
                 completion(articles,nil)
             } else {
                 completion([],err)
             }
         }
+    }
+}
+
+class DataParsing {
+    func decodeFrom(data:Data) -> [Article] {
+        guard let articles = try? JSONDecoder().decode([Article].self, from: data) else{
+            return []
+        }
+        return articles
+
     }
 }
