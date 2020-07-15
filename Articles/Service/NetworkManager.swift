@@ -8,17 +8,18 @@
 
 import Foundation
 
-enum RequestType:String {
-    case fetchArticles
+enum RequestType {
+    case fetchArticles(page:Int)
     
     var url: URL! {
            switch self {
-           case .fetchArticles:
-            return URL(string: NetworkManager.BASEURL + "jet2/api/v1/blogs?page=1&limit=10")!
+           case .fetchArticles (let page):
+            return URL(string: NetworkManager.BASEURL + "jet2/api/v1/blogs?page=\(page)&limit=10")!
            }
        }
-    
 }
+
+
 class NetworkManager {
     
     static let BASEURL = "https://5e99a9b1bc561b0016af3540.mockapi.io/"
@@ -31,7 +32,7 @@ class NetworkManager {
         task.resume()
     }
     
-    func fetchArticles(request type: RequestType, completion: @escaping ([Article]?,Error?) -> Void) {
+    func fetchArticles(_ type: RequestType, completion: @escaping ([Article]?,Error?) -> Void) {
         
         load(url: type.url) { data,err  in
             if let data = data {
